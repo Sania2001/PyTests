@@ -26,11 +26,13 @@ if __name__ == "__main__":
             length = int(input("Enter length of rect"))
             breadth = int(input("Enter Breadth"))
             Peri_rect = pri_rect(length, breadth)
+            print(Peri_rect)
             break;
 
         elif (selection == 3):
             side = int(input("Enter the side"))
             Area_sq = area_sq(side)
+            print(Area_sq)
             break;
 
         else:
