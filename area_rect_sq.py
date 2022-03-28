@@ -19,6 +19,7 @@ if __name__ == "__main__":
             length = int(input("Enter length of rect"))
             breadth = int(input("Enter Breadth"))
             Area_rectangle = area_rect(length, breadth)
+            print(Area_rectangle)
             break;
 
         elif (selection == 2):
