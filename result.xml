@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="2" tests="12" time="0.131" timestamp="2022-03-29T17:03:25.629854" hostname="DESKTOP-ML3914P"><testcase classname="test_Calc" name="test_add[3-2-5]" time="0.001" /><testcase classname="test_Calc" name="test_add[5-6-11]" time="0.001" /><testcase classname="test_Calc" name="test_add[4-5-6]" time="0.002"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calc" name="test_sub[5-3-2]" time="0.001" /><testcase classname="test_Calc" name="test_sub[11-5-6]" time="0.001" /><testcase classname="test_Calc" name="test_sub[4-5-6]" time="0.001"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calc" name="test_mul[5-3-15]" time="0.001" /><testcase classname="test_Calc" name="test_mul[11-5-55]" time="0.001" /><testcase classname="test_Calc" name="test_mul[4-5-6]" time="0.001"><failure message="assert 6 == 20">a = 4, b = 5, c = 6
+
+    @pytest.mark.parametrize("a,b,c",[(5,3,15),(11,5,55),(4,5,6)])
+    def test_mul(a,b,c):
+        # x = 20
+        # y = 10
+        result = Calc.mul(a, b)
+&gt;       assert c == result
+E       assert 6 == 20
+
+test_Calc.py:25: AssertionError</failure></testcase><testcase classname="test_Calc" name="test_div[4-2-2]" time="0.001" /><testcase classname="test_Calc" name="test_div[36-6-6]" time="0.001" /><testcase classname="test_Calc" name="test_div[4-5-6]" time="0.002"><failure message="assert 6 == 0.8">a = 4, b = 5, c = 6
+
+    @pytest.mark.parametrize("a,b,c",[(4,2,2),(36,6,6),(4,5,6)])
+    def test_div(a,b,c):
+        # x = 20
+        # y = 10
+        result = Calc.div(a, b)
+&gt;       assert c == result
+E       assert 6 == 0.8
+
+test_Calc.py:32: AssertionError</failure></testcase></testsuite></testsuites>
